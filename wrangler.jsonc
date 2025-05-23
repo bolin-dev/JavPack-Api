@@ -2,7 +2,7 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "javpack-api",
   "main": "src/index.ts",
-  "compatibility_date": "2025-05-23"
+  "compatibility_date": "2025-05-23",
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
@@ -21,13 +21,13 @@
   //     "bucket_name": "my-bucket"
   //   }
   // ],
-  // "d1_databases": [
-  //   {
-  //     "binding": "MY_DB",
-  //     "database_name": "my-database",
-  //     "database_id": ""
-  //   }
-  // ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "javpack-api-d1",
+      "database_id": "9f246e86-f51b-4280-bc12-5a84d351d0e9"
+    }
+  ]
   // "ai": {
   //   "binding": "AI"
   // },
