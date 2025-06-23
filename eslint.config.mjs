@@ -1,7 +1,14 @@
 import antfu from "@antfu/eslint-config";
 
 export default antfu({
-  formatters: true,
+  type: "app",
   typescript: true,
-  stylistic: { semi: true, quotes: "double" },
-});
+  formatters: true,
+  stylistic: {
+    indent: 2,
+    semi: true,
+    quotes: "double",
+  },
+  ignores: ["**/migrations/*"],
+},
+);
